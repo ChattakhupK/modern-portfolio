@@ -167,7 +167,8 @@ const ProjectsSection = () => {
       </h2>
       <div className="text-white flex flex-wrap flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
-          onClick={handleTagChange}s
+          onClick={handleTagChange}
+          s
           name="All"
           isSelected={tag === "All"}
         />
