@@ -5,39 +5,42 @@ import React, { useState } from "react";
 import { FaGithub, FaFacebook, FaDiscord, FaInstagram } from "react-icons/fa";
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    setLoading(true);
+    try {
+      const email = e.target.email.value;
+      const subject = e.target.subject.value;
+      const message = e.target.message.value;
 
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
+      const data = { email, subject, message };
 
-    const res = await fetch(endpoint, options);
-    const resData = await res.json();
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    console.log(res.status);
-    if (res.status === 200) {
-      console.log("Message sent");
+      const result = await res.json();
+      console.log(result);
+      e.target.reset();
+    } catch (err) {
+      console.log();
+    } finally {
       setEmailSubmitted(true);
-    } else {
-      console.error("Failed to send message", resData);
+      setLoading(false);
     }
   };
 
   return (
-    <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
+    <section
+      id="contact"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+    >
       <div className="bg-radial from-gray-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-2/4 left-1/4 transform -translate-x-1/2 -translate-1/2"></div>
 
       <div className="z-10">
@@ -86,13 +89,12 @@ const EmailSection = () => {
               อีเมลของคุณ
             </label>
             <input
-              disabled
               name="email"
               type="email"
               id="email"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 "
-              placeholder="Lnwza007@hotmail.com (ยังไม่เปิดให้ส่ง รอverify)"
+              placeholder="Lnwza007@hotmail.com"
             />
           </div>
           <div className="mb-6">
@@ -103,13 +105,12 @@ const EmailSection = () => {
               หัวข้อ
             </label>
             <input
-              disabled
               name="subject"
               type="text"
               id="subject"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 "
-              placeholder="จากบริษัท.... (ยังไม่เปิดให้ส่ง รอverify)"
+              placeholder="จากบริษัท...."
             />
           </div>
           <div className="mb-6">
@@ -120,19 +121,18 @@ const EmailSection = () => {
               เนื้อหา
             </label>
             <textarea
-              disabled
               name="message"
               id="message"
-              placeholder="สวัสดีครับ ผม.... อยากติดต่อขอให้คุณ เข้าร่วมสัมภาษณ์งานกับเราในวันที่.... (ยังไม่เปิดให้ส่ง รอverify)"
+              placeholder="อธิบายเนื้อหา... (กรุณาแนบเบอร์ด้วยนะครับ)"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
             />
           </div>
           <button
-            disabled
+            disabled={loading}
             type="submit"
             className="bg-gray-500 hover:bg-gray-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
           >
-            ส่งข้อความ
+            {loading ? "กำลังส่ง..." : "ส่งข้อความ"}
           </button>
           {emailSubmitted && (
             <p className="text-green-500 text-sm mt-2">ส่งอีเมลสำเร็จ!!</p>
@@ -141,6 +141,7 @@ const EmailSection = () => {
       </div>
     </section>
   );
+
 };
 
 export default EmailSection;
