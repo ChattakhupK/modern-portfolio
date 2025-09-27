@@ -89,12 +89,13 @@ const EmailSection = () => {
               อีเมลของคุณ
             </label>
             <input
+              disabled={true}
               name="email"
               type="email"
               id="email"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 "
-              placeholder="Lnwza007@hotmail.com"
+              placeholder="รอverify"
             />
           </div>
           <div className="mb-6">
@@ -105,12 +106,13 @@ const EmailSection = () => {
               หัวข้อ
             </label>
             <input
+              disabled={true}
               name="subject"
               type="text"
               id="subject"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 "
-              placeholder="จากบริษัท...."
+              placeholder="รอverify"
             />
           </div>
           <div className="mb-6">
@@ -121,14 +123,15 @@ const EmailSection = () => {
               เนื้อหา
             </label>
             <textarea
+              disabled={true}
               name="message"
               id="message"
-              placeholder="อธิบายเนื้อหา... (กรุณาแนบเบอร์ด้วยนะครับ)"
+              placeholder="รอverify (กรุณาแนบเบอร์ด้วยนะครับ)"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
             />
           </div>
           <button
-            disabled={loading}
+            disabled={true}
             type="submit"
             className="bg-gray-500 hover:bg-gray-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
           >
@@ -141,7 +144,6 @@ const EmailSection = () => {
       </div>
     </section>
   );
-
 };
 
 export default EmailSection;
