@@ -18,6 +18,7 @@ const TAB_DATA = [
         <li>NODE.JS</li>
         <li>TAILWIND</li>
         <li>BOOTSTRAP</li>
+        <li>SOCKET.IO</li>
         <li>FIREBASE</li>
         <li>MYSQL</li>
         <li>GITHUB</li>

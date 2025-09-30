@@ -27,6 +27,16 @@ const projectsData = [
     previewUrl: "https://nextjs-portfolio-2025-swart.vercel.app/th",
   },
   {
+    id: 15,
+    title: "Chat-socket.io",
+    description:
+      "แชท local ไว้คุยเล่นๆแบบกลุ่ม ใช้ socket.io และ express หน้าบ้านใช้ react",
+    image: "/images/projects/15.png",
+    tag: ["All", "web"],
+    gitUrl: "https://github.com/ChattakhupK/Chat-IO-FE",
+    previewUrl: "/",
+  },
+  {
     id: 2,
     title: "Figma UI Portfolio",
     description:
