@@ -39,7 +39,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Frontend Web w1",
+    title: "Fronend work1 admin",
     description:
       "เว็บหน้า front end ตอนช่วงที่ทำงานเขียนหน้าเว็บให้กับบริษัทนึง โดยเป็นการทำตามบรีฟที่ได้รับมา",
     image: "/images/projects/3.png",
@@ -49,7 +49,7 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Frontend Web w2",
+    title: "Frontend work2 user",
     description:
       "เว็บหน้า front end ตอนช่วงที่ทำงานเขียนหน้าเว็บให้กับบริษัทนึง โดยเป็นการทำตามบรีฟที่ได้รับมา",
     image: "/images/projects/4.png",
@@ -137,6 +137,16 @@ const projectsData = [
     description:
       "การสร้างกระทู้สนทนาสามารถทำได้โดยใช้ HTML, CSS, Handlers และ MySQL",
     image: "/images/projects/12.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/ChattakhupK/WEBBOARD-HBS-MYSQL",
+    previewUrl: "/",
+  },
+  {
+    id: 14,
+    title: "Fronend work1 user",
+    description:
+      "เว็บหน้า front end ตอนช่วงที่ทำงานเขียนหน้าเว็บให้กับบริษัทนึง โดยเป็นการทำตามบรีฟที่ได้รับมา",
+    image: "/images/projects/14.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ChattakhupK/WEBBOARD-HBS-MYSQL",
     previewUrl: "/",
