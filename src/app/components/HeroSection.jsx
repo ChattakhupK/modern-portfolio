@@ -48,7 +48,7 @@ const HeroSection = () => {
             </Link>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-slate-500 to-slate-50 hover:bg-slate-800 text-white mt-3 cursor-pointer hover:text-gray-100 hover:scale-105 duration-150">
               <a
-                href="/CV.pdf"
+                href="/cv.pdf"
                 download
                 className="block bg-[#121212] rounded-full px-5 py-2"
               >
