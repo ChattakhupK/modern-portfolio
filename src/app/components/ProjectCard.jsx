@@ -8,7 +8,7 @@ const ProjectCard = ({
   description,
   gitUrl,
   previewUrl,
-  isNew,
+  category,
 }) => {
   return (
     <div>
@@ -16,9 +16,11 @@ const ProjectCard = ({
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "contain" }}
       >
-        {isNew && (
-          <span className="absolute top-4 -left-2 bg-red-500 text-white text-sm font-bold px-4 py-1 rounded z-20">
-            มาใหม่
+        {category && (
+          <span
+            className={`absolute top-4 -left-2 ${category === "new" ? "bg-red-600" : "bg-yellow-600"}  text-white text-sm font-bold px-4 py-1 rounded z-20`}
+          >
+            {category === "new" ? "มาใหม่" : "กำลังพัฒนา"}
           </span>
         )}
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-black/80 bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">

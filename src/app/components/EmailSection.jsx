@@ -95,7 +95,7 @@ const EmailSection = () => {
               id="email"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 "
-              placeholder="รอverify"
+              placeholder="กรุณาติดต่อทางเบอร์โทร 085-855-4668"
             />
           </div>
           <div className="mb-6">
@@ -112,7 +112,7 @@ const EmailSection = () => {
               id="subject"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 "
-              placeholder="รอverify"
+              placeholder="กรุณาติดต่อทางเบอร์โทร 085-855-4668"
             />
           </div>
           <div className="mb-6">
@@ -126,7 +126,7 @@ const EmailSection = () => {
               disabled={true}
               name="message"
               id="message"
-              placeholder="รอverify (กรุณาแนบเบอร์ด้วยนะครับ)"
+              placeholder="กรุณาติดต่อทางเบอร์โทร 085-855-4668"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
             />
           </div>

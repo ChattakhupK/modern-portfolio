@@ -6,19 +6,30 @@ import { animate, motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
-    id: 1,
-    title: "Ecommerce-2025",
+    id: 0,
+    title: "Findwork จ่ายงานสำหรับนายและลูกจ้าง",
     description:
-      "ผลงานล่าสุดที่ผมกำลังพัฒนา ที่จะมีระบบที่ดีกว่า Ecommerce ก่อนหน้า พร้อมใช้งานได้จริง โดยหน้าบ้านตกแต่งด้วย Tailwind+Antd ทำ UI ที่สวยทันสมัย หลังบ้านNodejs ทำ API ทุกเส้นเขียนขึ้นมาเอง และมีระบบจ่ายเงินได้จริงด้วย Stripe",
+      "เว็บแอพสำหรับให้นายจ้างที่ต้องการจ้างงานรายครั้ง และ ลูกจ้างที่ต้องการหางานเสริม หรือ งานหลัก ได้มาเจอกันด้วยเว็บแอพนี้ เราจะสามารถวางงานพร้อมบอกรายละเอียดได้",
+    image: "/images/projects/16.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/ChattakhupK/Findwork-nextjs-ts",
+    previewUrl: "/",
+    category: "dev",
+  },
+  {
+    id: 1,
+    title: "Lnwcom เว็บขายอุปกรณ์IT",
+    description:
+      "เว็บสำหรับขายอุปกรณ์ไอที ที่ทันสมัยใช้ไม่ยากเพราะไม่ได้มีฟีจเจอร์เยอแยะจนทำให้รก ทำให้ผู้ใช้เมื่อเข้ามาครั้งแรกสามารถซื้อเป็นได้ทันที่",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ChattakhupK/LNWCOM-ECOM-FE",
     previewUrl: "https://lnwcom-web-by-chattakhupk.vercel.app/",
-    isNew: true,
+    category: "new",
   },
   {
     id: 13,
-    title: "Portfolio2025-v.1",
+    title: "Portfolio2025 เวอร์ชั่นก่อน",
     description:
       "ที่รวมผลงานเก็บข้อมูลของผมในเวอร์ชั่นก่อน ก่อนจะเป็นอันล่าสุดนี้",
     image: "/images/projects/13.png",
@@ -219,7 +230,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
-              isNew={project.isNew}
+              category={project.category}
             />
           </motion.li>
         ))}
