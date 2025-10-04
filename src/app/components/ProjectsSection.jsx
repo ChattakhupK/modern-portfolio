@@ -31,7 +31,7 @@ const projectsData = [
     id: 13,
     title: "Portfolio2025 เวอร์ชั่นก่อน",
     description:
-      "ที่รวมผลงานเก็บข้อมูลของผมในเวอร์ชั่นก่อน ก่อนจะเป็นอันล่าสุดนี้",
+      "ที่รวบรวมผลงานเก็บข้อมูลของผมในเวอร์ชั่นก่อน ก่อนจะเป็นอันล่าสุดนี้ จะมีการใส่รูปใบ Certificate และรูป CV ในนั้นเลยทำให้อาจจะดูรกเกินไป จึงเกิดเป็นเวอร์ชั่นปัจจุบันนี้",
     image: "/images/projects/13.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ChattakhupK/nextjs-portfolio-2025",
@@ -169,7 +169,7 @@ const projectsData = [
       "เว็บหน้า front end ตอนช่วงที่ทำงานเขียนหน้าเว็บให้กับบริษัทนึง โดยเป็นการทำตามบรีฟที่ได้รับมา",
     image: "/images/projects/14.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/ChattakhupK/WEBBOARD-HBS-MYSQL",
+    gitUrl: "/",
     previewUrl: "/",
   },
 ];
@@ -214,7 +214,10 @@ const ProjectsSection = () => {
           isSelected={tag === "Design"}
         />
       </div>
-      <ul ref={ref} className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+      <ul
+        ref={ref}
+        className="grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
+      >
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
