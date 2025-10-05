@@ -6,6 +6,17 @@ import { animate, motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 17,
+    title: "Full Stack Social",
+    description:
+      "ทำเว็บ social ที่คล้าย x frontend-react backend-express db-mongo",
+    image: "/images/projects/17.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
+    category: "fut",
+  },
+  {
     id: 0,
     title: "Findwork จ่ายงานสำหรับนายและลูกจ้าง",
     description:

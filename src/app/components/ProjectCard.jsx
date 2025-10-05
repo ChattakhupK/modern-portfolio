@@ -10,13 +10,19 @@ const ProjectCard = ({
   previewUrl,
   category,
 }) => {
+  console.log(category);
+
   return (
     <div className="relative group">
       {category && (
         <span
-          className={`absolute top-4 -left-2 ${category === "new" ? "bg-red-600" : "bg-yellow-600"}  text-white text-sm font-bold px-4 py-1 rounded z-20`}
+          className={`absolute top-4 -left-2 ${category === "new" ? "bg-red-600" : category === "dev" ? "bg-yellow-600" : "bg-gray-600"}  text-white text-sm font-bold px-4 py-1 rounded z-20`}
         >
-          {category === "new" ? "มาใหม่" : "กำลังพัฒนา"}
+          {category === "new"
+            ? "มาใหม่"
+            : category === "dev"
+              ? "กำลังพัฒนา"
+              : "วางแผน"}
         </span>
       )}
       <div
