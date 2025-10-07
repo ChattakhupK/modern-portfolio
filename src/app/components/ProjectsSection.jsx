@@ -15,6 +15,7 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "/",
     category: "fut",
+    ver: "",
   },
   {
     id: 0,
@@ -25,7 +26,8 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ChattakhupK/Findwork-nextjs-ts",
     previewUrl: "https://findwork-pi.vercel.app/",
-    category: "dev",
+    category: "new",
+    ver: "0.1",
   },
   {
     id: 1,
@@ -37,6 +39,7 @@ const projectsData = [
     gitUrl: "https://github.com/ChattakhupK/LNWCOM-ECOM-FE",
     previewUrl: "https://lnwcom-web-by-chattakhupk.vercel.app/",
     category: "new",
+    ver: "1.0",
   },
   {
     id: 13,
@@ -244,7 +247,8 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
-              category={project.category}
+              category={project?.category}
+              ver={project?.ver}
             />
           </motion.li>
         ))}

@@ -9,6 +9,7 @@ const ProjectCard = ({
   gitUrl,
   previewUrl,
   category,
+  ver,
 }) => {
   console.log(category);
 
@@ -19,7 +20,7 @@ const ProjectCard = ({
           className={`absolute top-4 -left-2 ${category === "new" ? "bg-red-600" : category === "dev" ? "bg-yellow-600" : "bg-gray-600"}  text-white text-sm font-bold px-4 py-1 rounded z-20`}
         >
           {category === "new"
-            ? "มาใหม่"
+            ? `มาใหม่ ${ver}`
             : category === "dev"
               ? "กำลังพัฒนา"
               : "วางแผน"}
