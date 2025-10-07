@@ -24,7 +24,7 @@ const projectsData = [
     image: "/images/projects/16.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ChattakhupK/Findwork-nextjs-ts",
-    previewUrl: "/",
+    previewUrl: "https://findwork-pi.vercel.app/",
     category: "dev",
   },
   {
