@@ -27,7 +27,7 @@ const projectsData = [
     gitUrl: "https://github.com/ChattakhupK/Findwork-nextjs-ts",
     previewUrl: "https://findwork-pi.vercel.app/",
     category: "new",
-    ver: "0.1",
+    ver: "0.8",
   },
   {
     id: 1,
@@ -39,7 +39,7 @@ const projectsData = [
     gitUrl: "https://github.com/ChattakhupK/LNWCOM-ECOM-FE",
     previewUrl: "https://lnwcom-web-by-chattakhupk.vercel.app/",
     category: "new",
-    ver: "1.0",
+    ver: "1.2",
   },
   {
     id: 13,
