@@ -12,7 +12,7 @@ const projectsData = [
       "ทำเว็บ social ที่คล้าย x frontend-react backend-express db-mongo",
     image: "/images/projects/17.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/ChattakhupK/Thaisoical-js",
     previewUrl: "/",
     category: "fut",
     ver: "",
