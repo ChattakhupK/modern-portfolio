@@ -7,9 +7,9 @@ import { animate, motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 17,
-    title: "Full Stack Social",
+    title: "Animal Social สังคมเหล่าสัตว์",
     description:
-      "ทำเว็บ social ที่คล้าย x frontend-react backend-express db-mongo",
+      "เว็บไซต์พูดคุยเพื่อสัตว์น่ารักทั้งหลายในโลก และเป็นการลองใช้ MUI UI ทำส่วนหน้าบ้านและเปลีย่น Theme ได้ด้วย",
     image: "/images/projects/17.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ChattakhupK/Thaisoical-js",
