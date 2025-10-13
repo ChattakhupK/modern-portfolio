@@ -14,8 +14,8 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ChattakhupK/Thaisoical-js",
     previewUrl: "/",
-    category: "fut",
-    ver: "",
+    category: "new",
+    ver: "1.0",
   },
   {
     id: 0,
