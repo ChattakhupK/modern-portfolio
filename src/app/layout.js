@@ -20,6 +20,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Portfolio - CK",
   description: "เก็บข้อมูลผลงาน ไว้ใช้สำหรับสมัครงาน Developer หรือ กลุ่มIT",
+  icons:{
+    icon:'/favicon-16x16.png'
+  }
 };
 
 export default function RootLayout({ children }) {
