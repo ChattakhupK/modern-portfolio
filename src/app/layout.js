@@ -21,7 +21,7 @@ export const metadata = {
   title: "Portfolio - CK",
   description: "เก็บข้อมูลผลงาน ไว้ใช้สำหรับสมัครงาน Developer หรือ กลุ่มIT",
   icons:{
-    icon:'/favicon-16x16.png'
+    icon:'/favicon-32x32.png'
   }
 };
 
