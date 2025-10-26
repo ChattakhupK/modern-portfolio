@@ -6,6 +6,18 @@ import { animate, motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 18,
+    title: "Portfolio แบบย่อยง่าย",
+    description:
+      "เว็บไซต์ Portfolio แบบย่อยง่าย ที่ข้อมูลจะไม่เยอะมากแต่เข้าใจครบ มีการดีไซน์ที่ทันสมัย มี Dark Mode และอื่นๆที่กำลังจะออกมา",
+    image: "/images/projects/18.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/ChattakhupK/webportfolio-official",
+    previewUrl: "https://portfolio-official-liart.vercel.app/",
+    category: "new",
+    ver: "0.2",
+  },
+  {
     id: 17,
     title: "Animal Social สังคมเหล่าสัตว์",
     description:
@@ -26,7 +38,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ChattakhupK/Findwork-nextjs-ts",
     previewUrl: "https://findwork-pi.vercel.app/",
-    category: "new",
+    category: "",
     ver: "0.8",
   },
   {
@@ -38,7 +50,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ChattakhupK/LNWCOM-ECOM-FE",
     previewUrl: "https://lnwcom-web-by-chattakhupk.vercel.app/",
-    category: "new",
+    category: "",
     ver: "1.2",
   },
   {
